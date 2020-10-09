@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title> HW12</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mission to Mars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="btn btn-primary btn-lg">
+              <a class="nav-link" href="/scrape" role="button" >Scrape New Data <span class="sr-only"> (current)</span></a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </nav>
+</head>
+<body>
+    <h1>Latest Mars News</h1>
+    <h3>{{ results.Title_Text }}</h3>
+    <p>{{ results.Paragraph_Text }}</p>
+    <h1>Featured Mars Image</h1>
+    <p>{{ results.Featured_Image_URL }}</p>
+    <h1>Mars Facts</h1>
+    <p>
+        stuff here
+    </p>
+    <h1>Mars Hemispheres</h1>
+    <h3>Valles Marineris Hemisphere</h3>
+    <p>{{ results.Valles_Marineris_Hemisphere }}</p>
+    <h3>Cerberus Hemisphere</h3>
+    <p>{{ results.Cerberus_Hemisphere }}</p>
+    <h3>Schiaparelli Hemisphere</h3>
+    <p>{{ results.Schiaparelli_Hemisphere }}</p>
+    <h3>Syrtis Major Hemisphere</h3>
+    <p>{{ results.Syrtis_Major_Hemisphere }}</p>
+</body>
+</html>
